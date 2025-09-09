@@ -1,0 +1,30 @@
+{
+  "api_type": "static_github",
+  "endpoints": {
+    "base_url": "https://your-username.github.io/your-repo",
+    "get_dates": "/api/dates.json",
+    "get_trajectory": "/data/taxi_data_{date}.json",
+    "get_summary": "/api/summary.json",
+    "get_hourly": "/data/taxi_summary_by_hour.json"
+  },
+  "frontend_config": {
+    "default_date": "2013-09-12",
+    "map_center": [
+      117.0,
+      36.65
+    ],
+    "map_zoom": 11,
+    "point_limit": 20000,
+    "update_interval": 1000
+  },
+  "data_format": {
+    "point": [
+      "lng",
+      "lat",
+      "timestamp",
+      "flag"
+    ],
+    "timestamp_unit": "seconds",
+    "coordinate_system": "WGS84"
+  }
+}

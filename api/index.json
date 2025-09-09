@@ -1,0 +1,30 @@
+{
+  "name": "GPS出租车数据API",
+  "version": "1.0.0",
+  "description": "济南出租车GPS轨迹数据静态API服务",
+  "base_url": "https://raw.githubusercontent.com/{username}/{repo}/main/data",
+  "endpoints": {
+    "dates": "/api/dates.json",
+    "summary": "/api/summary.json",
+    "data": "/data/taxi_data_{date}.json",
+    "hourly_summary": "/data/taxi_summary_by_hour.json"
+  },
+  "available_dates": [
+    "2013-09-12",
+    "2013-09-13",
+    "2013-09-14",
+    "2013-09-15",
+    "2013-09-16",
+    "2013-09-17",
+    "2013-09-18"
+  ],
+  "data_format": {
+    "trajectory_point": [
+      "lng",
+      "lat",
+      "timestamp",
+      "flag"
+    ],
+    "description": "经度, 纬度, Unix时间戳, 载客状态(0=空车,1=载客)"
+  }
+}

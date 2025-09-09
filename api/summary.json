@@ -1,0 +1,25 @@
+{
+  "dataset_info": {
+    "name": "济南出租车GPS轨迹数据集",
+    "period": "2013-09-12 至 2013-09-18",
+    "total_days": 7,
+    "city": "济南市",
+    "data_source": "出租车GPS轨迹"
+  },
+  "statistics": {
+    "total_points": 700000,
+    "sampled_points": 140000,
+    "sampling_rate": 0.2,
+    "geographic_bounds": {
+      "lat_min": 36.0,
+      "lat_max": 37.0,
+      "lng_min": 116.0,
+      "lng_max": 118.0
+    }
+  },
+  "data_quality": {
+    "valid_coordinates": 0.9962,
+    "data_completeness": 1.0,
+    "processing_status": "完成"
+  }
+}
